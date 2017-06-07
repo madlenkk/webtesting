@@ -1,0 +1,14 @@
+{
+  "username": "test@test.com",
+  "password": "test123",
+  "invalid_username": "ttest@test.com",
+  "invalid_password": "ttest123",
+  "category": "Clothing",
+  "product_name": "Django T-shirt",
+  "first_name": "Moje jméno",
+  "last_name": "Moje příjmení",
+  "address_line1": "Moje Ulice",
+  "city": "Moje Město",
+  "zip_code": 11111,
+  "country": "CZ"
+}
