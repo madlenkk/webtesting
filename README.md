@@ -202,12 +202,13 @@ Napište test na odhlášení z testovacího eshopu - podle testovacího scéná
   * využijte v něm už hotové funkce  - např. `test_case_01_valid_login.py`
   * uložte a spusťte test
   * pokud test prošel, vypublikujte ho na váš github
-  ```
+     ```
      git add test_suite_06_logout/test_case_01_logout_[vase_jmeno].py
      git commit --all --message "Ading my test for logout"
      git push
-  ```
+     ```
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
+  * autor prvního pull requestu dostane `fidorku`
 
 
 ### Úkol 2
@@ -219,10 +220,10 @@ Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý t
   * vytvořte nový soubor např. `test.py` (nemusíte řešit zařazení do podsložek - a nebo jo - je to na vás) a naprogramujte test podle scénáře (a nebo ne - je to na vás)
   * uložte a spusťte test
   * pokud test prošel, vypublikujte ho na váš github
-  ```
+     ```
      git add tests_[vase_jmeno]
      git commit --all --message "Adding my own test"
      git push
-  ```
+     ```
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
   * autor nejvtipnějšího testu dostane `fidorku`
