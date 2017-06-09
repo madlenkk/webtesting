@@ -46,7 +46,7 @@ Ostatní nainstalujeme během workshopu.
 
 * Testovací scénáře: https://goo.gl/8bXLte
 
-**Úkol:** Zaregistrujte se na [testovacím eshopu](http://testshop.pyladies.cz/accounts/login/). Email nemusí být funkční, ale zapamatujte si ho.
+**Úkol:** Zaregistrujte se na [testovacím eshopu](http://testshop.pyladies.cz/accounts/login/). Email může být smyšlený, ale zapamatujte si ho.
 
 
 ## Automatické testování
@@ -55,16 +55,13 @@ Ostatní nainstalujeme během workshopu.
 
 * [Python 3](http://python.org)
 * [virtualenv](https://virtualenv.pypa.io/en/stable/) - nástroj pro tvorbu izolovaných Python prostředí
-* verzovací systém [git](https://git-scm.com/) a webová služba [github](https://github.com/)
-* [pytest](http://pytest.org/) - The pytest framework makes it easy to write
-  small tests, yet scales to support complex functional testing for applications
-  and libraries. We use it, because it's better then standard Python unittest modul
-* [selenium](http://www.seleniumhq.org/) - nástroj pro automatické testování webových aplikací
-* [pytest-selenium](http://pytest-selenium.readthedocs.io) - plugin pro pytest
+* [pytest](http://pytest.org/) - testovací framework pro Python (alternativou je Python unittest modul)
+* [Selenium](http://www.seleniumhq.org/) - nástroj pro automatické testování webových aplikací
+* [pytest-selenium](http://pytest-selenium.readthedocs.io) - selenium plugin pro pytest
 * webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
   Proč Chrome? [Proto!](http://www.zive.cz/clanky/valka-prohlizecu-v-roce-2016-ie-mizi-ze-sceny-a-vsechno-bere-chrome/sc-3-a-185443/default.aspx)
 * [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) - ovladač webového prohlížeče Chrome
-
+* verzovací systém [git](https://git-scm.com/) a webová služba [github](https://github.com/)
 
 ### Instalace
 
