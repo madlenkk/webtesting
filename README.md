@@ -25,6 +25,7 @@ Ostatní nainstalujeme během workshopu.
 * Úvod do testování SW
 * Příprava na testování
 * Automatické testování
+* Úkoly
 
 
 ## Úvod do testování SW
@@ -192,7 +193,9 @@ Pytest umí generovat přehledné html reporty včetně screenshotů. Nastavují
 Více v dokumentaci k [pytest-selenium](http://pytest-selenium.readthedocs.io/en/latest/user_guide.html#html-report).
 
 
-## Úkol 1
+## Úkoly
+
+### Úkol 1
 
 Napište test na odhlášení z testovacího eshopu - podle testovacího scénáře 06_logout.
   * soubor uložte do složky pro příslušný test suite: `test_suite_06_logout` a pojmenujte ho: `test_case_01_logout_**[vase_jmeno]**.py`
@@ -207,7 +210,7 @@ Napište test na odhlášení z testovacího eshopu - podle testovacího scéná
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
 
 
-## Úkol 2
+### Úkol 2
 
 Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý test této stránky.
   * sepiště si testovací scénář (a nebo ne - je to na vás)
@@ -222,4 +225,4 @@ Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý t
      git push
   ```
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
-  
+  * autor nejvtipnějšího testu dostane `fidorku`
