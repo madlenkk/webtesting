@@ -6,16 +6,7 @@
 
 *Basic knowledge of Python is required (suitable for PyLadies). Basic knowledge of html and css (DOM and selectors) is advantage.*
 
-*Requirements: Python 3, Chrome, Git, GitHub account, others will be installed in the workshop.*
 
-## Obsah workshopu
-
-* Zahájení
-* Úvod do testování webových aplikací
-* Seznámení s testovací aplikací
-* Manuální testování
-* Test Cases
-* Inspektor
 
 ## Potřebné technologie
 
@@ -26,29 +17,70 @@ Před zahájením workshopu potřebujete mít:
 * nainstalovaný [git](https://git-scm.com/) - postup instalace na [Nauč se Python!](http://nau2cse.python.cz/lessons/git/install)
 * účet na [github](https://github.com/)
 
+Ostatní nainstalujeme během workshopu.
 
-Další technologie nainstalujeme během workshopu:
 
+
+## Obsah workshopu
+
+* Zahájení
+* Úvod do testování SW
+* Příprava na testování
+* Automatické testování
+
+
+
+## Úvod do testování SW
+
+* [Moje přednáška na PyCon CZ 2016](https://www.youtube.com/watch?v=3YekbncInhU)
+
+
+
+### Typy testování
+
+
+
+* Manuální
+* Automatické
+
+
+
+## Příprava na testování
+
+* Testovací eshop: http://testshop.pyladies.cz
+
+* Testovací scénáře: https://goo.gl/8bXLte
+
+Úkol: Proveďte registraci na [testovacím eshopu](http://testshop.pyladies.cz/accounts/login/).
+
+
+
+## Automatické testování
+
+Použité technologie:
+
+* [Python 3](http://python.org)
+* [virtualenv](https://virtualenv.pypa.io/en/stable/) - nástroj pro tvorbu izolovaných Python prostředí
+* verzovací systém [git](https://git-scm.com/) a webová služba [github](https://github.com/)
 * [pytest](http://pytest.org/) - The pytest framework makes it easy to write
   small tests, yet scales to support complex functional testing for applications
-  and libraries. We use it, because it's better then standard Python Unittest
-* [selenium](http://www.seleniumhq.org/) - Selenium automates browsers.
-  Primarily, it is for automating web applications for testing purposes.
-* [pytest-selenium](http://pytest-selenium.readthedocs.io/en/latest/) -
-  pytest-selenium is a plugin for py.test that provides support for running
-  Selenium based tests.
+  and libraries. We use it, because it's better then standard Python unittest modul
+* [selenium](http://www.seleniumhq.org/) - nástroj pro automatické testování webových aplikací
+* [pytest-selenium](http://pytest-selenium.readthedocs.io) - plugin pro pytest
+* webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+  Proč Chrome? [Proto!](http://www.zive.cz/clanky/valka-prohlizecu-v-roce-2016-ie-mizi-ze-sceny-a-vsechno-bere-chrome/sc-3-a-185443/default.aspx)
 * [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) - ovladač webového prohlížeče Chrome
-* [virtualenv](https://virtualenv.pypa.io/en/stable/) - virtualenv is a tool to
-  create isolated Python environments.
 
-## Instalace
+
+
+### Instalace
 
 1. Otevřete konzoli a vstupte do vámi zvolené složky:
   ```
   cd my_projects
   ```
 
-2. Naklonujte si repozitář `webtesting` z githubu a vstupte do složky `webtesting`:
+2. Naklonujte si repozitář [`webtesting`](https://github.com/madlenkk/webtesting.git) z githubu a vstupte do složky `webtesting`:
   ```
   git clone https://github.com/madlenkk/webtesting.git
   cd webtesting
@@ -72,7 +104,7 @@ Další technologie nainstalujeme během workshopu:
   $ source venv-tests/bin/activate
   ```
 
-5. Do vitruálního prostředí nainstalujte potřebné balíky uvedené v souboru `requirements.txt` pomocí `pip`:
+5. Do vitruálního prostředí nainstalujte potřebné balíky uvedené v souboru [`requirements.txt`](requirements.txt) pomocí `pip`:
   ```
   pip install -r requirements.txt
   ```
@@ -92,17 +124,18 @@ Další technologie nainstalujeme během workshopu:
     * Windows: Exportujte zip, uložte soubor chromedriver.exe a přidejte cestu k souboru do Environment Variables (PATH).
     * Linux: Exportujte zip do `/usr/local/bin/`.
 
-7. Správné nastavení webdriveru ověřte spuštěním zkušební testu, který se nachází ve složce `installation`:
+7. Správné nastavení webdriveru ověřte spuštěním zkušební testu [`installation.py`](installation/test_installation.py), který se nachází ve složce `installation`:
   ```
   python installation/test_installation.py
   ```
-  Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v konzoli se vypíše výsledek testu.
-  Proveďte úkon, který jste našli ve vaší konzoli.
+  Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v konzoli se vypíše výsledek testu. 
+  Sledujte, co se děje v prohlížeči a následně proveďte úkon, který test vypsal do vaší konzole.
 
 
-## Spuštění testů
 
-Všechny testy jsou uloženy ve složce `tests` a rozděleny do podsložek podle Test Suites. 
+### Spuštění testů
+
+Všechny testy jsou uloženy ve složce [`tests`](tests) a rozděleny do podsložek podle testovacích scénářů. 
 
 Před spuštěním testů, je potřeba:
 * mít aktivované virtuální prostředí `venv-tests`
@@ -111,7 +144,7 @@ Před spuštěním testů, je potřeba:
 Vaše konzole by tedy měla vypisovat zhruba toto:
 * Linux:
 ```
-(venv-tests) user: ~/webtesting/tests $
+(venv-tests) username: ~/webtesting/tests $
 ```
 
 Všechny testy ve složce `tests` spustíte pomocí příkazu:
@@ -129,11 +162,13 @@ Probíhající test můžete přerušit zavřením prohlížeče, ve kterém tes
 CTRL + C
 ```
 
-## Konfigurace testů
 
-Rozmanitá konfigurace je uložena v souboru [pytest.ini](tests/pytest.ini), díky kterému není potřeba vypisovat parametry do konzole. Nicméně vypsáním parametrů do konzole lze výchozí konfiguraci přebýt nebo doplnit o další parametry.
+
+### Konfigurace testů
+
+Rozmanitá konfigurace je uložena v souboru [`pytest.ini`](tests/pytest.ini), díky kterému není potřeba vypisovat parametry do konzole. Nicméně vypsáním parametrů do konzole lze výchozí konfiguraci přebýt nebo doplnit.
 ```
-pytest --html=reports/report_all.html -
+pytest --html=reports/another_report.html
 ```
 
 Více o jednotlivých parametrech se dozvíte pomocí:
@@ -141,10 +176,15 @@ Více o jednotlivých parametrech se dozvíte pomocí:
 pytest --help
 ```
 
-## Proměnné
 
-V testech jsou použity proměnné, které jsou odděleny od kódu a najdete je v souboru: `variables.json` ve složce `tests`.
 
-Proveďte registraci na [testovacím eshopu](http://testshop.pyladies.cz/accounts/login/).
+### Proměnné
 
-Otevřete soubor `variables.json` a přepište hodnoty proměnných na vaše vlastní - `username` a `password` se musí shodovat s údaji, které jste vyplnili při registraci.
+V jednotlivých testech jsou použity proměnné, které jsou odděleny od kódu a najdete je v souboru [`variables.json`](tests/variables.json).
+
+Otevřete soubor `variables.json` v textovém editoru a přepište hodnoty proměnných na vaše vlastní - `username` a `password` se musí shodovat s údaji, které jste vyplnili při registraci.
+
+
+
+
+
