@@ -175,7 +175,7 @@ Spusťte test pro **validní** přihlášení a html report nechte vypsat do sou
   * CSS_SELECTOR
   * XPATH
   * ... - více v dokumentaci [Selenium with Python](http://selenium-python.readthedocs.io/locating-elements.html)
-* ověření se provádí pomocí `assert` - více v dokumentaci k [pytest](https://docs.pytest.org/en/latest/assert.html)
+* ověření očekávaného výsledku (Expected Result z testovacího scénáře) se provádí pomocí `assert` - více v dokumentaci k [pytest](https://docs.pytest.org/en/latest/assert.html)
 
 
 ### Inspektor (DevTools)
@@ -192,27 +192,32 @@ Pytest umí generovat přehledné html reporty včetně screenshotů. Nastavují
 Více v dokumentaci k [pytest-selenium](http://pytest-selenium.readthedocs.io/en/latest/user_guide.html#html-report).
 
 
-## Úkoly
+## Úkol 1
 
-1. Napište test na odhlášení z testovacího eshopu - podle testovacího scénáře 06_logout.
+Napište test na odhlášení z testovacího eshopu - podle testovacího scénáře 06_logout.
   * soubor uložte do složky pro příslušný test suite: `test_suite_06_logout` a pojmenujte ho: `test_case_01_logout_**[vase_jmeno]**.py`
   * využijte v něm už hotové funkce  - např. `test_case_01_valid_login.py`
   * uložte a spusťte test
   * pokud test prošel, vypublikujte ho na váš github
-  ```git add test_suite_06_logout/test_case_01_logout_**[vase_jmeno]**.py
+  ```
+     git add test_suite_06_logout/test_case_01_logout_[vase_jmeno].py
      git commit --all --message "Ading my test for logout"
      git push
   ```
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
- 
- 2. Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý test této stránky.
+
+
+## Úkol 2
+
+Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý test této stránky.
   * sepiště si testovací scénář (a nebo ne - je to na vás)
   * ve složce `webtesting` vytvořte novou složku s názvem `tests_**[vase_jmeno]**`
   * do této složky zkopírujte soubor `tests/pytest.ini` a do parametru `base_url` vložte url vaší testované aplikace 
-  * vytvořte nový soubor např. `test.py` (nemusíte řešit zařazení do podsložek - je to na vás) a naprogramujte test podle scénáře (a nebo ne - je to na vás)
+  * vytvořte nový soubor např. `test.py` (nemusíte řešit zařazení do podsložek - a nebo jo - je to na vás) a naprogramujte test podle scénáře (a nebo ne - je to na vás)
   * uložte a spusťte test
   * pokud test prošel, vypublikujte ho na váš github
-  ```git add tests_**[vase_jmeno]**
+  ```
+     git add tests_[vase_jmeno]
      git commit --all --message "Adding my own test"
      git push
   ```
