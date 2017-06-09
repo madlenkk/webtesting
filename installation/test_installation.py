@@ -5,14 +5,21 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # chromedriver binary must be in PATH
 browser = webdriver.Chrome('chromedriver')
-browser.get('http://seleniumhq.org/')
+browser.get('https://github.com/madlenkk/webtesting/blob/master/installation/test_page.md')
 
 try:
-    el = browser.find_element_by_class_name('downloadBox')
-    el.click()
+    img = browser.find_element_by_xpath('//*[@id="readme"]/article/p[1]/a/img')
+    img.click()
 
-    re = WebDriverWait(browser, 2).until(
-        EC.text_to_be_present_in_element((By.TAG_NAME, 'h2'), 'Downloads')
+    re = WebDriverWait(browser, 5).until(
+        EC.presence_of_element_located((By.ID, 'page-container'))
+    )
+
+    button = browser.find_element_by_class_name('ytp-fullscreen-button')
+    button.click()
+
+    re = WebDriverWait(browser, 50).until(
+        EC.visibility_of_element_located((By.CLASS_NAME, 'ytp-upnext-top'))
     )
 
     print("Všechno se povedlo - třikrát zatleskej, zvolej 'juchů' a vyvěš zelený papírek!")

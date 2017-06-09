@@ -11,7 +11,7 @@ def selenium(selenium):
     return selenium
 
 
-def test_case_01_valid_login(selenium, base_url, variables):
+def test(selenium, base_url, variables):
     step_01_open_tested_page(selenium, base_url)
     step_02_click_on_login(selenium)
     step_03_fill_username(selenium, variables['username'])
