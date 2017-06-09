@@ -170,7 +170,7 @@ Nebo v dokumentaci:
 
 V jednotlivých testech jsou použity proměnné, které jsou odděleny od kódu a najdete je v souboru [`variables.json`](tests/variables.json).
 
-**Úkol 1:** Otevřete soubor `variables.json` v textovém editoru a přepište hodnoty proměnných na vaše vlastní - `username` a `password` se musí shodovat s údaji, které jste vyplnili při registraci do testovacího eshopu. 
+**Úkol:** Otevřete soubor `variables.json` v textovém editoru a přepište hodnoty proměnných na vaše vlastní - `username` a `password` se musí shodovat s údaji, které jste vyplnili při registraci do testovacího eshopu. 
 Spusťte test pro **validní** přihlášení a html report nechte vypsat do souboru `reports/01_valid_login.html`.
 
 
