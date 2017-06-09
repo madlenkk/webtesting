@@ -29,15 +29,7 @@ Ostatní nainstalujeme během workshopu.
 
 ## Úvod do testování SW
 
-* [Moje přednáška na PyCon CZ 2016](https://www.youtube.com/watch?v=3YekbncInhU)
-
-
-### Typy testování
-
-
-
-* Manuální
-* Automatické
+* [Přednáška](https://www.youtube.com/watch?v=3YekbncInhU) na PyCon CZ 2016
 
 
 ## Příprava na testování
@@ -132,20 +124,19 @@ Před spuštěním testů, je potřeba:
 
 Vaše konzole by tedy měla vypisovat zhruba toto: `(venv-tests) username: ~/webtesting/tests $` (Linux).
 
-Všechny testy ve složce `tests` spustíte pomocí příkazu:
+Všechny testy ve složce `tests` můžete spustit pomocí příkazu:
 ```
 pytest
 ```
 
+Pytest spouští automaticky všechny soubory a funkce začínající slovem `test`, které najde v akutální složce a jejích podsložkách. I ty musejí začínat slovem `test`.
+
 Pokud chcete spouštět testy jednotlivě, přidejte cestu k souboru s daným testem - např.:
 ```
-pytest suite_02_login/case_02_invalid_login.py
+pytest test_suite_02_login/test_case_02_invalid_login.py
 ```
 
-Probíhající test můžete přerušit zavřením prohlížeče, ve kterém test probíhá, nebo v konzoli pomocí:
-```
-CTRL + C
-```
+Probíhající test můžete přerušit zavřením prohlížeče, ve kterém test probíhá, nebo v konzoli pomocí `CTRL + C` (Linux).
 
 
 ### Konfigurace testů
@@ -162,6 +153,7 @@ pytest --help
 
 Nebo v dokumentaci: 
 
+
 ### Proměnné
 
 V jednotlivých testech jsou použity proměnné, které jsou odděleny od kódu a najdete je v souboru [`variables.json`](tests/variables.json).
@@ -170,6 +162,23 @@ V jednotlivých testech jsou použity proměnné, které jsou odděleny od kódu
 Spusťte test pro **validní** přihlášení a html report nechte vypsat do souboru `reports/01_valid_login.html`.
 
 
+### Psaní testů
 
 
 
+### Logy a reporty
+
+
+
+## Úkoly
+
+1. Napište test na odhlášení z testovacího eshopu - podle testovacího scénáře (test suite 06_logout).
+  * vytvořte složku pro test suite `test_suite_06_logout_**vase_jmeno**`
+  * vytvořte soubor pro test case `test_case_01_logout.py`
+  * využijte v něm už hotové funkce (test_case_01_valid_login.py)
+  * uložte a spusťte test
+  * pokud test prošel, pošlete vaši změnu na github
+  ```git add test_suite_06_logout
+     git commit -a -m"Adding test for logout
+     git push
+  ```
