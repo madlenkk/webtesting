@@ -7,7 +7,6 @@
 *Basic knowledge of Python is required (suitable for PyLadies). Basic knowledge of html and css (DOM and selectors) is advantage.*
 
 
-
 ## Potřebné technologie
 
 Před zahájením workshopu potřebujete mít:
@@ -20,7 +19,6 @@ Před zahájením workshopu potřebujete mít:
 Ostatní nainstalujeme během workshopu.
 
 
-
 ## Obsah workshopu
 
 * Zahájení
@@ -29,11 +27,9 @@ Ostatní nainstalujeme během workshopu.
 * Automatické testování
 
 
-
 ## Úvod do testování SW
 
 * [Moje přednáška na PyCon CZ 2016](https://www.youtube.com/watch?v=3YekbncInhU)
-
 
 
 ### Typy testování
@@ -44,20 +40,18 @@ Ostatní nainstalujeme během workshopu.
 * Automatické
 
 
-
 ## Příprava na testování
 
 * Testovací eshop: http://testshop.pyladies.cz
 
 * Testovací scénáře: https://goo.gl/8bXLte
 
-Úkol: Proveďte registraci na [testovacím eshopu](http://testshop.pyladies.cz/accounts/login/).
-
+**Úkol:** Zaregistrujte se na [testovacím eshopu](http://testshop.pyladies.cz/accounts/login/). Email nemusí být funkční, ale zapamatujte si ho.
 
 
 ## Automatické testování
 
-Použité technologie:
+### Použité technologie:
 
 * [Python 3](http://python.org)
 * [virtualenv](https://virtualenv.pypa.io/en/stable/) - nástroj pro tvorbu izolovaných Python prostředí
@@ -70,7 +64,6 @@ Použité technologie:
 * webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
   Proč Chrome? [Proto!](http://www.zive.cz/clanky/valka-prohlizecu-v-roce-2016-ie-mizi-ze-sceny-a-vsechno-bere-chrome/sc-3-a-185443/default.aspx)
 * [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) - ovladač webového prohlížeče Chrome
-
 
 
 ### Instalace
@@ -132,10 +125,9 @@ Použité technologie:
   Sledujte, co se děje v prohlížeči a následně proveďte úkon, který test vypsal do vaší konzole.
 
 
-
 ### Spuštění testů
 
-Všechny testy jsou uloženy ve složce [`tests`](tests) a rozděleny do podsložek podle testovacích scénářů. 
+Všechny testy jsou uloženy ve složce [`tests`](tests) a rozděleny do podsložek podle testovacích scénářů (suites). 
 
 Před spuštěním testů, je potřeba:
 * mít aktivované virtuální prostředí `venv-tests`
@@ -154,14 +146,13 @@ pytest
 
 Pokud chcete spouštět testy jednotlivě, přidejte cestu k souboru s daným testem - např.:
 ```
-pytest test_suite_02_login/test_case_01_valid_login.py
+pytest suite_02_login/case_02_invalid_login.py
 ```
 
 Probíhající test můžete přerušit zavřením prohlížeče, ve kterém test probíhá, nebo v konzoli pomocí:
 ```
 CTRL + C
 ```
-
 
 
 ### Konfigurace testů
@@ -176,13 +167,14 @@ Více o jednotlivých parametrech se dozvíte pomocí:
 pytest --help
 ```
 
-
+Nebo v dokumentaci: 
 
 ### Proměnné
 
 V jednotlivých testech jsou použity proměnné, které jsou odděleny od kódu a najdete je v souboru [`variables.json`](tests/variables.json).
 
-Otevřete soubor `variables.json` v textovém editoru a přepište hodnoty proměnných na vaše vlastní - `username` a `password` se musí shodovat s údaji, které jste vyplnili při registraci.
+**Úkol 1:** Otevřete soubor `variables.json` v textovém editoru a přepište hodnoty proměnných na vaše vlastní - `username` a `password` se musí shodovat s údaji, které jste vyplnili při registraci do testovacího eshopu. 
+Spusťte test pro **validní** přihlášení a html report nechte vypsat do souboru `reports/01_valid_login.html`.
 
 
 
