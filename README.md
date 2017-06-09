@@ -8,6 +8,15 @@
 
 *Requirements: Python 3, Chrome, Git, GitHub account, others will be installed in the workshop.*
 
+## Obsah workshopu
+
+* Zahájení
+* Úvod do testování webových aplikací
+* Seznámení s testovací aplikací
+* Manuální testování
+* Test Cases
+* Inspektor
+
 ## Potřebné technologie
 
 Před zahájením workshopu potřebujete mít:
@@ -35,65 +44,60 @@ Další technologie nainstalujeme během workshopu:
 ## Instalace
 
 1. Otevřete konzoli a vstupte do vámi zvolené složky:
-```
-cd my_projects
-```
+  ```
+  cd my_projects
+  ```
 
-1. Naklonujte si repozitář `webtesting` z githubu a vstupte do složky `webtesting`:
-```
-git clone https://github.com/madlenkk/webtesting.git
-cd webtesting
-```
+2. Naklonujte si repozitář `webtesting` z githubu a vstupte do složky `webtesting`:
+  ```
+  git clone https://github.com/madlenkk/webtesting.git
+  cd webtesting
+  ```
 
-1. Vytvořte virtuální prostředí:
-```
-virtualenv -p python3 venv-tests
-```
+3. Vytvořte virtuální prostředí:
+  ```
+  virtualenv -p python3 venv-tests
+  ```
 
-1. Spusťte virtuální prostředí:
+4. Spusťte virtuální prostředí:
 
   * Windows:
-```
-> venv-tests\Scripts\activate.bat
-```
-
-   V případě potíží, restartujte bash.
+  ```
+  > venv-tests\Scripts\activate.bat
+  ```
+   *Pozn.: V případě potíží, restartujte bash.*
 
   * Linux/macOS:
-```
-$ source venv-tests/bin/activate
-```
+  ```
+  $ source venv-tests/bin/activate
+  ```
 
-1. Do vitruálního prostředí nainstalujte potřebné balíky uvedené v souboru `requirements.txt` pomocí `pip`:
-```
-pip install -r requirements.txt
-```
+5. Do vitruálního prostředí nainstalujte potřebné balíky uvedené v souboru `requirements.txt` pomocí `pip`:
+  ```
+  pip install -r requirements.txt
+  ```
+  Úspěšnost této instalace můžete ověřit například pomocí příkazu:
+  ```
+  pytest --version
+  ```
 
-Úspěšnost této instalace můžete ověřit například pomocí příkazu:
-```
-pytest --version
-```
+6. Proveďte instalaci a nastavení webového ovladače:
 
-1. Proveďte instalaci a nastavení webového ovladače:
+  * [Windows](installation/install_windows.md)
+  * [Linux](installation/install_linux.md)
+  * [macOS](installation/install_macos.md)
 
-* [Windows](installation/install_windows.md)
-* [Linux](installation/install_linux.md)
-* [macOS](installation/install_macos.md)
+  Stáhněte a nainstalujte [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+  Přidejte `chromedriver` do adresáře `$PATH`:
+    * Windows: Exportujte zip, uložte soubor chromedriver.exe a přidejte cestu k souboru do Environment Variables (PATH).
+    * Linux: Exportujte zip do `/usr/local/bin/`.
 
-Stáhněte a nainstalujte [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads).
-
-Přidejte `chromedriver` do adresáře `$PATH`:
-
-  * Windows: Exportujte zip, uložte soubor chromedriver.exe a přidejte cestu k souboru do Environment Variables (PATH).
-
-  * Linux: Exportujte zip do `/usr/local/bin/`.
-
-1. Správné nastavení webdriveru ověřte spuštěním zkušební testu, který se nachází ve složce `installation`:
-```
-python installation/test_installation.py
-```
-Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v konzoli se vypíše výsledek testu.
-Proveďte úkon, který jste našli ve vaší konzoli.
+7. Správné nastavení webdriveru ověřte spuštěním zkušební testu, který se nachází ve složce `installation`:
+  ```
+  python installation/test_installation.py
+  ```
+  Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v konzoli se vypíše výsledek testu.
+  Proveďte úkon, který jste našli ve vaší konzoli.
 
 
 ## Spuštění testů
