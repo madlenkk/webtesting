@@ -130,11 +130,7 @@ Před spuštěním testů, je potřeba:
 * mít aktivované virtuální prostředí `venv-tests`
 * být ve složce `tests`
 
-Vaše konzole by tedy měla vypisovat zhruba toto:
-* Linux:
-```
-(venv-tests) username: ~/webtesting/tests $
-```
+Vaše konzole by tedy měla vypisovat zhruba toto: `(venv-tests) username: ~/webtesting/tests $` (Linux).
 
 Všechny testy ve složce `tests` spustíte pomocí příkazu:
 ```
