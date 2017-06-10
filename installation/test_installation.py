@@ -22,10 +22,10 @@ try:
         EC.visibility_of_element_located((By.CLASS_NAME, 'ytp-upnext-top'))
     )
 
-    print("Všechno se povedlo - třikrát zatleskej, zvolej 'juchů' a vyvěš zelený papírek!")
+    print("Všechno se povedlo - stoupni si, otoč se jednou dokola a tleskej u toho!")
 
 except:
-    print("Něco je špatně - krátce  pískni a vyvěš červený papírek.")
+    print("Něco je špatně - stoupni si a krátce pískni! Pokud neumíš pískat, zvolej 'ajajaj'")
 
 finally:
     browser.quit()
