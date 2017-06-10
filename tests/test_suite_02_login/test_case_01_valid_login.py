@@ -16,7 +16,7 @@ def test(selenium, base_url, variables):
 def step_01_open_tested_page(selenium, base_url):
     selenium.get(base_url)
 
-    # zkontrolujeme, ze na strance je napis <h2>Log In</h2>
+    # zkontrolujeme, ze na strance je napis <h1>All Products</h1>
     el = selenium.find_element_by_tag_name('h1')
     assert 'All products' in el.text
 
