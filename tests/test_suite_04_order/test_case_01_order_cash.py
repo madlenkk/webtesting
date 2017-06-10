@@ -5,13 +5,6 @@ from selenium import webdriver
 
 from test_suite_03_basket.test_case_01_add_item_to_basket import test as case_03_01
 
-import pytest
-@pytest.fixture
-def selenium(selenium):
-    # selenium.implicitly_wait(10)
-    selenium.maximize_window()
-    return selenium
-
 
 def test(selenium, base_url, variables):
     # step_01_open_page

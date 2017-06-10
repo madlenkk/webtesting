@@ -3,14 +3,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-import pytest
-@pytest.fixture
-def selenium(selenium):
-    # selenium.implicitly_wait(10)
-    selenium.maximize_window()
-    return selenium
-
-
 def test(selenium, base_url, variables):
     step_01_open_tested_page(selenium, base_url)
     step_02_click_on_login(selenium)

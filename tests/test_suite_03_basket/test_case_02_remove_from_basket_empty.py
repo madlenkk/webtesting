@@ -6,13 +6,6 @@ from selenium import webdriver
 from test_suite_03_basket.test_case_01_add_item_to_basket import test as case_03_01
 from test_suite_04_order.test_case_01_order_cash import step_06_go_to_basket as step_04_01_06
 
-import pytest
-@pytest.fixture
-def selenium(selenium):
-    # selenium.implicitly_wait(10)
-    selenium.maximize_window()
-    return selenium
-
 
 def test(selenium, base_url, variables):
     case_03_01(selenium, base_url, variables)
