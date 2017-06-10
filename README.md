@@ -31,7 +31,7 @@ Ostatní nainstalujeme během workshopu.
 ## Úvod do testování SW
 
 * [Přednáška](https://www.youtube.com/watch?v=3YekbncInhU) na PyCon CZ 2016
-
+* Teorie z kurzu [TestLadies](https://github.com/PyLadiesCZ/TestLadies/blob/master/seminar/d01-02_testovani_software/README.md)
 
 ## Příprava na testování
 
@@ -168,7 +168,9 @@ Spusťte test pro **validní** přihlášení a html report nechte vypsat do sou
 
 ### Psaní testů
 
-* v každém testu je nejprve nutné naimportovat moduly ze selenia a pytest
+* globální nastavení všech testů je uloženo v souboru `conftest.py`
+* názvy podsložek a souborů testů musí začínat slovem `test` 
+* v každém testu je nejprve nutné naimportovat moduly ze selenia
 * název hlavní funkce musí začínat slovem `test`
 * elementy na stránce se lokalizují pomocí: `find_element(By.[metoda])`
   * ID
@@ -216,7 +218,7 @@ Napište test na odhlášení z testovacího eshopu - podle testovacího scéná
 Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý test této stránky.
   * sepiště si testovací scénář (a nebo ne - je to na vás)
   * ve složce `webtesting` vytvořte novou složku s názvem `tests_**[vase_jmeno]**`
-  * do této složky zkopírujte soubor `tests/pytest.ini` a do parametru `base_url` vložte url vaší testované aplikace 
+  * do této složky zkopírujte soubory `tests/conftest.py` a `tests/pytest.ini` - do parametru `base_url` vložte url vaší testované aplikace 
   * vytvořte nový soubor např. `test.py` (nemusíte řešit zařazení do podsložek - a nebo jo - je to na vás) a naprogramujte test podle scénáře (a nebo ne - je to na vás)
   * uložte a spusťte test
   * pokud test prošel, vypublikujte ho na váš github
