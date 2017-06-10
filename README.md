@@ -30,8 +30,19 @@ Ostatní nainstalujeme během workshopu.
 
 ## Úvod do testování SW
 
-* [Přednáška](https://www.youtube.com/watch?v=3YekbncInhU) na PyCon CZ 2016
+Testování SW **pomáhá** eliminovat bugy v systému.
+
+Testování SW je široký pojem. Existuje tisíc a jedno rozdělení testování na typy.
+Pro tento workshop je důležité:
+* statické x **dynamické**
+* white-box x **black-box**
+* unit x **integrační**
+
+Více o testování SW např.:
+* Moje [Přednáška](https://www.youtube.com/watch?v=3YekbncInhU) na PyCon CZ 2016
 * Teorie z kurzu [TestLadies](https://github.com/PyLadiesCZ/TestLadies/blob/master/seminar/d01-02_testovani_software/README.md)
+* Na webu [Testování softwaru](http://testovanisoftwaru.cz/) testování softwaru
+* Na [Wikipedia](https://cs.wikipedia.org/wiki/Testov%C3%A1n%C3%AD_softwaru)
 
 ## Příprava na testování
 
