@@ -1,0 +1,2 @@
+2017-06-10 09:09:32.791000 WARNING - http://testshop.pyladies.cz/accounts/login/ - This page includes a password or credit card input in a non-secure context. A warning has been added to the URL bar. For more information, see https://goo.gl/zmWq3m.
+2017-06-10 09:09:33.566000 WARNING - http://testshop.pyladies.cz/accounts/login/ - This page includes a password or credit card input in a non-secure context. A warning has been added to the URL bar. For more information, see https://goo.gl/zmWq3m.

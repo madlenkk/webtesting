@@ -1,0 +1,557 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html lang="en-gb" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html lang="en-gb" class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html lang="en-gb" class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb" class="no-js"><!--<![endif]--><head>
+        <title>
+    Login or register | TestLadies - sandbox
+</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="created" content="10th Jun 2017 11:09" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="NOARCHIVE,NOCACHE" />
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        
+            <link rel="shortcut icon" href="/static/oscar/favicon.ico" />
+        
+
+        
+        
+    
+    
+        <link rel="stylesheet" type="text/css" href="/static/oscar/css/styles.css" />
+    
+    <link rel="stylesheet" href="/static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="/static/oscar/css/datetimepicker.css" />
+
+
+        
+        
+
+        
+
+        
+            
+            
+
+        
+    </head>
+
+    <body id="default" class="default">
+        
+        
+    
+    
+
+<div id="top_page" class="navbar navbar-default navbar-static-top accounts">
+    
+    <div class="navbar-header">
+        <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".account-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+    </div>
+
+    <div class="navbar-collapse account-collapse collapse">
+        <div class="container-fluid">
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li><a id="login_link" href="/accounts/login/"><i class="icon-signin"></i> Login or register</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    <header class="header container-fluid">
+        <div class="page_inner">
+            <div class="row">
+                <div class="col-sm-7 h1"><a href="/catalogue/">TestLadies</a><small> sandbox</small></div>
+
+                
+                
+
+
+<div class="basket-mini pull-right hidden-xs">
+    <strong>Basket total:</strong>
+    
+        £0.00
+    
+
+    <span class="btn-group">
+        <a class="btn btn-default" href="/basket/">View basket</a>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+            <li>
+
+
+
+
+
+
+<ul class="basket-mini-item list-unstyled">
+    
+        <li><p>Your basket is empty.</p></li>
+    
+</ul>
+</li>
+        </ul>
+    </span>
+</div>
+            </div>
+        </div>
+        
+            
+
+
+
+<div class="navbar primary navbar-static-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header pull-right">
+            
+            <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".primary-collapse">
+                <span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </a>
+        </div>
+
+        <a class="btn btn-default navbar-btn btn-cart navbar-right visible-xs-inline-block" href="/basket/">
+            <i class="icon-shopping-cart"></i>
+            Basket
+            
+        </a>
+
+
+        <div class="navbar-collapse primary-collapse collapse">
+            
+                <ul id="browse" class="nav navbar-nav">
+                    <li class="dropdown active ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Browse store
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" data-navigation="dropdown-menu">
+                            
+                            <li><a tabindex="-1" href="/catalogue/">All products</a></li>
+                            
+                                <li class="divider"></li>
+                                
+                                    
+                                                <li><a tabindex="-1" href="/catalogue/category/clothing_1/">Clothing</a></li>
+                                            
+
+                                            
+                                
+                                    
+                                        <li class="dropdown-submenu">
+                                            <a tabindex="-1" href="/catalogue/category/books_2/">Books</a>
+                                            <ul class="dropdown-menu">
+                                            
+
+                                            
+                                
+                                    
+                                                <li><a tabindex="-1" href="/catalogue/category/books/fiction_3/">Fiction</a></li>
+                                            
+
+                                            
+                                
+                                    
+                                                <li><a tabindex="-1" href="/catalogue/category/books/non-fiction_5/">Non-Fiction</a></li>
+                                            
+
+                                            
+                                                </ul></li>
+                                            
+                                
+                            
+                            <li class="divider"></li>
+                            
+                                <li><a href="/offers/">Offers</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            
+            
+
+<form method="get" action="/search/" class="navbar-form navbar-right">
+    <div class="form-group">
+        <input class="form-control" id="id_q" name="q" placeholder="Search" tabindex="1" type="search" />
+    </div>
+    <input type="submit" value="Search" class="btn btn-default" />
+</form>
+
+        </div><!-- /navbar-collapse -->
+    </div>
+</div><!-- /navbar -->
+
+        
+    </header>
+
+    
+    
+        <div class="container-fluid page">
+            <div class="page_inner">
+                
+    <ul class="breadcrumb">
+        <li>
+            <a href="/catalogue/">Home</a>
+        </li>
+        <li class="active">Login or register</li>
+    </ul>
+
+                
+                
+
+
+
+<div id="messages">
+
+</div>
+
+                
+                <div class="content">
+                    
+
+                    
+                    <div id="promotions">
+                        
+                    </div>
+
+                    
+                    <div id="content_inner">
+
+    <div class="row">
+        <div class="col-sm-6 login_form">
+            <form id="login_form" action="/accounts/login/" method="post" class="well">
+                <h2>Log In</h2>
+                <input type="hidden" name="csrfmiddlewaretoken" value="bGb512IcejjhmWxGQk0DIdyFYs6KjbOu" />
+                
+
+
+    <div class="alert alert-danger">
+        <strong>Oops! We found some errors</strong> - please check the error messages below and try again
+    </div>
+
+
+
+    
+        <div class="alert alert-danger">
+            <i class="icon-exclamation-sign"></i> Please enter a correct username and password. Note that both fields may be case-sensitive.
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_login-username" class=" control-label required">
+                        Email address
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input class="form-control" id="id_login-username" name="login-username" type="email" value="johnylant@gmail.com" />
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_login-password" class=" control-label required">
+                        Password
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input class="form-control" id="id_login-password" name="login-password" type="password" />
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    <input id="id_login-redirect_url" name="login-redirect_url" type="hidden" />
+
+
+
+
+                <p><a href="/password-reset/">I've forgotten my password</a></p>
+                <button name="login_submit" type="submit" value="Log In" class="btn btn-lg btn-primary" data-loading-text="Logging in...">Log In</button>
+            </form>
+        </div>
+        <div class="col-sm-6 register_form">
+            <form id="register_form" action="/accounts/login/" method="post" class="well">
+                <h2>Register</h2>
+                <input type="hidden" name="csrfmiddlewaretoken" value="bGb512IcejjhmWxGQk0DIdyFYs6KjbOu" />
+                
+
+
+
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_registration-email" class=" control-label required">
+                        Email address
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input class="form-control" id="id_registration-email" name="registration-email" type="email" />
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_registration-password1" class=" control-label required">
+                        Password
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input class="form-control" id="id_registration-password1" name="registration-password1" type="password" />
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    
+    
+
+    
+        <div class="form-group ">
+
+            
+                
+                    <label for="id_registration-password2" class=" control-label required">
+                        Confirm password
+                    </label>
+                
+            
+
+            
+                <div class="">
+                    
+                        
+                            <input class="form-control" id="id_registration-password2" name="registration-password2" type="password" />
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+                </div>
+            
+        </div>
+    
+
+
+
+    
+
+
+
+    <input id="id_registration-redirect_url" name="registration-redirect_url" type="hidden" />
+
+
+
+
+                <button name="registration_submit" type="submit" value="Register" class="btn btn-lg btn-primary" data-loading-text="Registering...">Register</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+<footer class="footer container-fluid">
+    
+        
+    
+</footer>
+
+
+        
+        
+  
+            <!-- jQuery -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('&lt;script src="/static/oscar/js/jquery/jquery-1.9.1.min.js"&gt;&lt;\/script&gt;')</script>
+        
+  
+
+
+        
+        
+    
+        
+    <!-- Twitter Bootstrap -->
+    <script type="text/javascript" src="/static/oscar/js/bootstrap3/bootstrap.min.js"></script>
+    <!-- Oscar -->
+    <script src="/static/oscar/js/oscar/ui.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="/static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/oscar/js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.all.js" type="text/javascript" charset="utf-8"></script>
+
+
+        
+        
+    
+
+    
+
+
+        
+        <script type="text/javascript">
+            $(function() {
+                
+    
+    oscar.init();
+
+            });
+        </script>
+
+        
+        <!-- Version: N/A -->
+    
+
+</body></html>

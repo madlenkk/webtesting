@@ -1,0 +1,344 @@
+[1.001][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platform": "ANY",
+         "version": ""
+      },
+      "firstMatch": [  ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1.004][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1.005][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1.008][INFO]: Launching chrome: /opt/google/chrome/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-infobars --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-logging --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.2WuMxT/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12117 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.qW5QB3 data:,
+[1.427][INFO]: resolved localhost to ["::1","127.0.0.1","127.0.0.1"]
+[1.639][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.qW5QB3"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "~~~": "..."
+}
+[1.641][INFO]: COMMAND MaximizeWindow {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "windowHandle": "current"
+}
+[1.642][INFO]: resolved localhost to ["::1","127.0.0.1","127.0.0.1"]
+[1.657][INFO]: Waiting for pending navigations...
+[1.703][INFO]: Done waiting for pending navigations. Status: ok
+[1.825][INFO]: RESPONSE MaximizeWindow
+[1.828][INFO]: COMMAND Navigate {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "url": "http://testshop.pyladies.cz/"
+}
+[1.828][INFO]: Waiting for pending navigations...
+[1.829][INFO]: Done waiting for pending navigations. Status: ok
+[2.544][INFO]: Waiting for pending navigations...
+[2.922][INFO]: Done waiting for pending navigations. Status: ok
+[2.922][INFO]: RESPONSE Navigate
+[2.924][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "tag name",
+   "value": "h1"
+}
+[2.924][INFO]: Waiting for pending navigations...
+[2.926][INFO]: Done waiting for pending navigations. Status: ok
+[2.943][INFO]: Waiting for pending navigations...
+[2.944][INFO]: Done waiting for pending navigations. Status: ok
+[2.944][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.3665867114440793-1"
+}
+[2.945][INFO]: COMMAND GetElementText {
+   "id": "0.3665867114440793-1"
+}
+[2.945][INFO]: Waiting for pending navigations...
+[2.945][INFO]: Done waiting for pending navigations. Status: ok
+[2.963][INFO]: Waiting for pending navigations...
+[2.964][INFO]: Done waiting for pending navigations. Status: ok
+[2.964][INFO]: RESPONSE GetElementText "All products"
+[2.965][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "link text",
+   "value": "Login or register"
+}
+[2.965][INFO]: Waiting for pending navigations...
+[2.966][INFO]: Done waiting for pending navigations. Status: ok
+[2.983][INFO]: Waiting for pending navigations...
+[2.984][INFO]: Done waiting for pending navigations. Status: ok
+[2.984][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.3665867114440793-2"
+}
+[2.985][INFO]: COMMAND ClickElement {
+   "id": "0.3665867114440793-2",
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0"
+}
+[2.985][INFO]: Waiting for pending navigations...
+[2.986][INFO]: Done waiting for pending navigations. Status: ok
+[3.032][INFO]: Waiting for pending navigations...
+[3.260][INFO]: Done waiting for pending navigations. Status: ok
+[3.260][INFO]: RESPONSE ClickElement
+[3.262][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "tag name",
+   "value": "h2"
+}
+[3.262][INFO]: Waiting for pending navigations...
+[3.266][INFO]: Done waiting for pending navigations. Status: ok
+[3.288][INFO]: Waiting for pending navigations...
+[3.289][INFO]: Done waiting for pending navigations. Status: ok
+[3.289][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.015576586400560144-1"
+}
+[3.290][INFO]: COMMAND GetElementText {
+   "id": "0.015576586400560144-1"
+}
+[3.290][INFO]: Waiting for pending navigations...
+[3.291][INFO]: Done waiting for pending navigations. Status: ok
+[3.312][INFO]: Waiting for pending navigations...
+[3.313][INFO]: Done waiting for pending navigations. Status: ok
+[3.314][INFO]: RESPONSE GetElementText "Log In"
+[3.316][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "id",
+   "value": "id_login-username"
+}
+[3.316][INFO]: Waiting for pending navigations...
+[3.317][INFO]: Done waiting for pending navigations. Status: ok
+[3.337][INFO]: Waiting for pending navigations...
+[3.338][INFO]: Done waiting for pending navigations. Status: ok
+[3.338][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.015576586400560144-2"
+}
+[3.340][INFO]: COMMAND TypeElement {
+   "id": "0.015576586400560144-2",
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "text": "johnylant@gmail.com",
+   "value": [ "j", "o", "h", "n", "y", "l", "a", "n", "t", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m" ]
+}
+[3.340][INFO]: Waiting for pending navigations...
+[3.340][INFO]: Done waiting for pending navigations. Status: ok
+[3.461][INFO]: Waiting for pending navigations...
+[3.462][INFO]: Done waiting for pending navigations. Status: ok
+[3.462][INFO]: RESPONSE TypeElement
+[3.463][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "id",
+   "value": "id_login-password"
+}
+[3.463][INFO]: Waiting for pending navigations...
+[3.466][INFO]: Done waiting for pending navigations. Status: ok
+[3.486][INFO]: Waiting for pending navigations...
+[3.489][INFO]: Done waiting for pending navigations. Status: ok
+[3.489][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.015576586400560144-3"
+}
+[3.491][INFO]: COMMAND TypeElement {
+   "id": "0.015576586400560144-3",
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "text": "kamko123",
+   "value": [ "k", "a", "m", "k", "o", "1", "2", "3" ]
+}
+[3.491][INFO]: Waiting for pending navigations...
+[3.493][INFO]: Done waiting for pending navigations. Status: ok
+[3.566][INFO]: Waiting for pending navigations...
+[3.568][INFO]: Done waiting for pending navigations. Status: ok
+[3.568][INFO]: RESPONSE TypeElement
+[3.570][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "name",
+   "value": "login_submit"
+}
+[3.570][INFO]: Waiting for pending navigations...
+[3.571][INFO]: Done waiting for pending navigations. Status: ok
+[3.592][INFO]: Waiting for pending navigations...
+[3.595][INFO]: Done waiting for pending navigations. Status: ok
+[3.595][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.015576586400560144-4"
+}
+[3.598][INFO]: COMMAND ClickElement {
+   "id": "0.015576586400560144-4",
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0"
+}
+[3.598][INFO]: Waiting for pending navigations...
+[3.599][INFO]: Done waiting for pending navigations. Status: ok
+[3.656][INFO]: Waiting for pending navigations...
+[4.814][INFO]: Done waiting for pending navigations. Status: ok
+[4.814][INFO]: RESPONSE ClickElement
+[4.817][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "id",
+   "value": "messages"
+}
+[4.817][INFO]: Waiting for pending navigations...
+[4.830][INFO]: Done waiting for pending navigations. Status: ok
+[4.856][INFO]: Waiting for pending navigations...
+[4.856][INFO]: Done waiting for pending navigations. Status: ok
+[4.856][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.6659943290567634-1"
+}
+[4.857][INFO]: COMMAND GetElementText {
+   "id": "0.6659943290567634-1"
+}
+[4.857][INFO]: Waiting for pending navigations...
+[4.858][INFO]: Done waiting for pending navigations. Status: ok
+[4.883][INFO]: Waiting for pending navigations...
+[4.887][INFO]: Done waiting for pending navigations. Status: ok
+[4.887][INFO]: RESPONSE GetElementText "×\nWelcome back"
+[4.889][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "link text",
+   "value": "Logout"
+}
+[4.889][INFO]: Waiting for pending navigations...
+[4.889][INFO]: Done waiting for pending navigations. Status: ok
+[4.910][INFO]: Waiting for pending navigations...
+[4.911][INFO]: Done waiting for pending navigations. Status: ok
+[4.911][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.6659943290567634-2"
+}
+[4.913][INFO]: COMMAND ClickElement {
+   "id": "0.6659943290567634-2",
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0"
+}
+[4.913][INFO]: Waiting for pending navigations...
+[4.914][INFO]: Done waiting for pending navigations. Status: ok
+[4.968][INFO]: Waiting for pending navigations...
+[5.736][INFO]: Done waiting for pending navigations. Status: ok
+[5.736][INFO]: RESPONSE ClickElement
+[5.739][INFO]: COMMAND FindElement {
+   "sessionId": "d6c595959845a5fb4b1d643c1e9d5ab0",
+   "using": "link text",
+   "value": "Login or register"
+}
+[5.739][INFO]: Waiting for pending navigations...
+[5.741][INFO]: Done waiting for pending navigations. Status: ok
+[5.751][INFO]: Waiting for pending navigations...
+[5.753][INFO]: Done waiting for pending navigations. Status: ok
+[5.753][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.9211819952439664-1"
+}
+[5.754][INFO]: COMMAND GetElementText {
+   "id": "0.9211819952439664-1"
+}
+[5.754][INFO]: Waiting for pending navigations...
+[5.755][INFO]: Done waiting for pending navigations. Status: ok
+[5.775][INFO]: Waiting for pending navigations...
+[5.778][INFO]: Done waiting for pending navigations. Status: ok
+[5.778][INFO]: RESPONSE GetElementText "Login or register"
+[5.784][INFO]: COMMAND GetUrl {
+
+}
+[5.784][INFO]: Waiting for pending navigations...
+[5.785][INFO]: Done waiting for pending navigations. Status: ok
+[5.787][INFO]: Waiting for pending navigations...
+[5.788][INFO]: Done waiting for pending navigations. Status: ok
+[5.788][INFO]: RESPONSE GetUrl "http://testshop.pyladies.cz/catalogue/"
+[5.789][INFO]: COMMAND Screenshot {
+
+}
+[5.789][INFO]: Waiting for pending navigations...
+[5.790][INFO]: Done waiting for pending navigations. Status: ok
+[5.925][INFO]: Waiting for pending navigations...
+[5.925][INFO]: Done waiting for pending navigations. Status: ok
+[5.926][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABz8AAAO6CAIAAACOkw39AAAgAElEQVR4nOzdd3xX1f0/8JMJWSQBZIkDRcCNiqPinkyBSq1SrVZ/UnetX/3aViqKrdZaBcVatVIHalu/KCiKynKB2goOZIjIRvYK2SHj98e1aZoAporkRp/PRx99nJx77r3v+yGST16czzkJJSUlA..."
+[5.932][INFO]: COMMAND GetSource {
+
+}
+[5.932][INFO]: Waiting for pending navigations...
+[5.933][INFO]: Done waiting for pending navigations. Status: ok
+[5.939][INFO]: Waiting for pending navigations...
+[5.939][INFO]: Done waiting for pending navigations. Status: ok
+[5.939][INFO]: RESPONSE GetSource "\u003C!DOCTYPE html>\u003C!--[if lt IE 7]>      \u003Chtml lang=\"en-gb\" class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> \u003C![endif]-->\u003C!--[if IE 7]>         \u003Chtml lang=\"en-gb\" class=\"no-js lt-ie9 lt-ie8\"> \u003C![endif]-->\u003C!--[if I..."
