@@ -6,6 +6,7 @@
 
 *Basic knowledge of Python is required (suitable for PyLadies). Basic knowledge of html and css (DOM and selectors) is advantage.*
 
+## https://github.com/madlenkk/webtesting/
 
 ## Potřebné technologie
 
