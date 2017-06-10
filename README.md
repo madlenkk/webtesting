@@ -14,7 +14,7 @@ Před zahájením workshopu potřebujete mít:
 
 * nainstalovaný [Python 3](http://python.org) - postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/beginners/install/)
 * nainstalovaný webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
-* nainstalovaný [git](https://git-scm.com/) - postup instalace na [Nauč se Python!](http://nau2cse.python.cz/lessons/git/install)
+* nainstalovaný [git](https://git-scm.com/) - postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/git/install)
 * účet na [github](https://github.com/)
 
 Ostatní nainstalujeme během workshopu.
