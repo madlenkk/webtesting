@@ -42,7 +42,7 @@ Pro tento workshop je důležité:
 Více o testování SW např.:
 * Moje [Přednáška](https://www.youtube.com/watch?v=3YekbncInhU) na PyCon CZ 2016
 * Teorie z kurzu [TestLadies](https://github.com/PyLadiesCZ/TestLadies/blob/master/seminar/d01-02_testovani_software/README.md)
-* Na webu [Testování softwaru](http://testovanisoftwaru.cz/) testování softwaru
+* Na webu [Testování softwaru](http://testovanisoftwaru.cz/)
 * Na [Wikipedia](https://cs.wikipedia.org/wiki/Testov%C3%A1n%C3%AD_softwaru)
 
 ## Příprava na testování
@@ -222,7 +222,6 @@ Napište test na odhlášení z testovacího eshopu - podle testovacího scéná
      git push
      ```
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
-  * autor prvního pull requestu dostane `fidorku`
 
 
 ### Úkol 2
@@ -240,4 +239,4 @@ Vyberte si libovolnou webovou stránku a vymyslete a naprogramujte jednoduchý t
      git push
      ```
   * jděte na váš github a proveďte pull request (tlačítko `new-pull-request-btn` vyhledejte na stránce pomocí inspektoru)
-  * autor nejvtipnějšího testu dostane `fidorku`
+  
