@@ -1,0 +1,294 @@
+[0.995][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platform": "ANY",
+         "version": ""
+      },
+      "firstMatch": [  ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[0.996][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[0.997][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1.004][INFO]: Launching chrome: /opt/google/chrome/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-infobars --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-logging --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.87Ugrj/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12392 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.qfrWbn data:,
+[1.420][INFO]: resolved localhost to ["::1","127.0.0.1","127.0.0.1"]
+[1.610][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.qfrWbn"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "~~~": "..."
+}
+[1.613][INFO]: COMMAND MaximizeWindow {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "windowHandle": "current"
+}
+[1.623][INFO]: resolved localhost to ["::1","127.0.0.1","127.0.0.1"]
+[1.630][INFO]: Waiting for pending navigations...
+[1.677][INFO]: Done waiting for pending navigations. Status: ok
+[1.797][INFO]: RESPONSE MaximizeWindow
+[1.800][INFO]: COMMAND Navigate {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "url": "https://github.com/"
+}
+[1.800][INFO]: Waiting for pending navigations...
+[1.813][INFO]: Done waiting for pending navigations. Status: ok
+[2.459][INFO]: Waiting for pending navigations...
+[4.076][INFO]: Done waiting for pending navigations. Status: ok
+[4.076][INFO]: RESPONSE Navigate
+[4.078][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "tag name",
+   "value": "h1"
+}
+[4.078][INFO]: Waiting for pending navigations...
+[4.080][INFO]: Done waiting for pending navigations. Status: ok
+[4.097][INFO]: Waiting for pending navigations...
+[4.099][INFO]: Done waiting for pending navigations. Status: ok
+[4.099][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.38836756548607587-1"
+}
+[4.100][INFO]: COMMAND GetElementText {
+   "id": "0.38836756548607587-1"
+}
+[4.100][INFO]: Waiting for pending navigations...
+[4.102][INFO]: Done waiting for pending navigations. Status: ok
+[4.122][INFO]: Waiting for pending navigations...
+[4.123][INFO]: Done waiting for pending navigations. Status: ok
+[4.123][INFO]: RESPONSE GetElementText "Built for developers"
+[4.124][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "link text",
+   "value": "Sign in"
+}
+[4.124][INFO]: Waiting for pending navigations...
+[4.125][INFO]: Done waiting for pending navigations. Status: ok
+[4.146][INFO]: Waiting for pending navigations...
+[4.147][INFO]: Done waiting for pending navigations. Status: ok
+[4.147][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.38836756548607587-2"
+}
+[4.148][INFO]: COMMAND ClickElement {
+   "id": "0.38836756548607587-2",
+   "sessionId": "5e636681944b63f4a08611147e755be5"
+}
+[4.148][INFO]: Waiting for pending navigations...
+[4.150][INFO]: Done waiting for pending navigations. Status: ok
+[4.196][INFO]: Waiting for pending navigations...
+[4.773][INFO]: Done waiting for pending navigations. Status: ok
+[4.773][INFO]: RESPONSE ClickElement
+[4.775][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "tag name",
+   "value": "h1"
+}
+[4.775][INFO]: Waiting for pending navigations...
+[4.775][INFO]: Done waiting for pending navigations. Status: ok
+[4.781][INFO]: Waiting for pending navigations...
+[4.784][INFO]: Done waiting for pending navigations. Status: ok
+[4.784][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7933420374526012-1"
+}
+[4.786][INFO]: COMMAND GetElementText {
+   "id": "0.7933420374526012-1"
+}
+[4.786][INFO]: Waiting for pending navigations...
+[4.787][INFO]: Done waiting for pending navigations. Status: ok
+[4.810][INFO]: Waiting for pending navigations...
+[4.810][INFO]: Done waiting for pending navigations. Status: ok
+[4.810][INFO]: RESPONSE GetElementText "Sign in to GitHub"
+[4.812][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "id",
+   "value": "login_field"
+}
+[4.812][INFO]: Waiting for pending navigations...
+[4.812][INFO]: Done waiting for pending navigations. Status: ok
+[4.828][INFO]: Waiting for pending navigations...
+[4.829][INFO]: Done waiting for pending navigations. Status: ok
+[4.829][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7933420374526012-2"
+}
+[4.831][INFO]: COMMAND TypeElement {
+   "id": "0.7933420374526012-2",
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "text": "johnylant@gmail.com",
+   "value": [ "j", "o", "h", "n", "y", "l", "a", "n", "t", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m" ]
+}
+[4.831][INFO]: Waiting for pending navigations...
+[4.832][INFO]: Done waiting for pending navigations. Status: ok
+[4.937][INFO]: Waiting for pending navigations...
+[4.939][INFO]: Done waiting for pending navigations. Status: ok
+[4.939][INFO]: RESPONSE TypeElement
+[4.941][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "id",
+   "value": "password"
+}
+[4.941][INFO]: Waiting for pending navigations...
+[4.942][INFO]: Done waiting for pending navigations. Status: ok
+[4.959][INFO]: Waiting for pending navigations...
+[4.962][INFO]: Done waiting for pending navigations. Status: ok
+[4.962][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7933420374526012-3"
+}
+[4.966][INFO]: COMMAND TypeElement {
+   "id": "0.7933420374526012-3",
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "text": "Atlantida12",
+   "value": [ "A", "t", "l", "a", "n", "t", "i", "d", "a", "1", "2" ]
+}
+[4.966][INFO]: Waiting for pending navigations...
+[4.967][INFO]: Done waiting for pending navigations. Status: ok
+[5.055][INFO]: Waiting for pending navigations...
+[5.056][INFO]: Done waiting for pending navigations. Status: ok
+[5.057][INFO]: RESPONSE TypeElement
+[5.058][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "name",
+   "value": "commit"
+}
+[5.058][INFO]: Waiting for pending navigations...
+[5.058][INFO]: Done waiting for pending navigations. Status: ok
+[5.078][INFO]: Waiting for pending navigations...
+[5.081][INFO]: Done waiting for pending navigations. Status: ok
+[5.081][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7933420374526012-4"
+}
+[5.082][INFO]: COMMAND ClickElement {
+   "id": "0.7933420374526012-4",
+   "sessionId": "5e636681944b63f4a08611147e755be5"
+}
+[5.082][INFO]: Waiting for pending navigations...
+[5.084][INFO]: Done waiting for pending navigations. Status: ok
+[5.135][INFO]: Waiting for pending navigations...
+[5.606][INFO]: Done waiting for pending navigations. Status: ok
+[5.606][INFO]: RESPONSE ClickElement
+[5.607][INFO]: COMMAND FindElement {
+   "sessionId": "5e636681944b63f4a08611147e755be5",
+   "using": "tag name",
+   "value": "h2"
+}
+[5.607][INFO]: Waiting for pending navigations...
+[5.608][INFO]: Done waiting for pending navigations. Status: ok
+[5.631][INFO]: Waiting for pending navigations...
+[5.631][INFO]: Done waiting for pending navigations. Status: ok
+[5.631][INFO]: RESPONSE FindElement no such element: Unable to locate element: {"method":"tag name","selector":"h2"}
+  (Session info: chrome=58.0.3029.81)
+[5.640][INFO]: COMMAND GetUrl {
+
+}
+[5.640][INFO]: Waiting for pending navigations...
+[5.641][INFO]: Done waiting for pending navigations. Status: ok
+[5.643][INFO]: Waiting for pending navigations...
+[5.643][INFO]: Done waiting for pending navigations. Status: ok
+[5.643][INFO]: RESPONSE GetUrl "https://github.com/session"
+[5.645][INFO]: COMMAND Screenshot {
+
+}
+[5.645][INFO]: Waiting for pending navigations...
+[5.645][INFO]: Done waiting for pending navigations. Status: ok
+[5.758][INFO]: Waiting for pending navigations...
+[5.759][INFO]: Done waiting for pending navigations. Status: ok
+[5.759][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABz8AAAO6CAIAAACOkw39AAAgAElEQVR4nOzdd3RVVfo/4B1IQkvoSLEyEpGiNAujgAqKgIpdcBxFRUXF3h3R0bGXUXAc2+goNsqIoyhBsI2ICBYQFRCCIigEpJNASCH8/rjzzeQXktAC94DPs1yue99zzt7vOTesFT5rs29Cbm5uA..."
+[5.761][INFO]: COMMAND GetSource {
+
+}
+[5.761][INFO]: Waiting for pending navigations...
+[5.762][INFO]: Done waiting for pending navigations. Status: ok
+[5.765][INFO]: Waiting for pending navigations...
+[5.765][INFO]: Done waiting for pending navigations. Status: ok
+[5.765][INFO]: RESPONSE GetSource "\u003C!DOCTYPE html>\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">\u003Chead>\n    \u003Cmeta charset=\"utf-8\" />\n\n\u003Cmeta content=\"origin-when-cross-origin\" name=\"referrer\" />\n\n  \u003Clink crossorigin=\"anonymous\"..."
