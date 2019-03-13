@@ -1,0 +1,6 @@
+pytest==4.0.1
+pytest-html==1.19.0
+pytest-selenium==1.14.0
+pytest-base-url==1.4.1
+requests==2.20.0
+selenium==3.14.0

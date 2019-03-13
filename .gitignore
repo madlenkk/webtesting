@@ -1,0 +1,11 @@
+.*.sw*
+.*un~
+*.pyc
+*.py~
+*.log
+
+.cache
+.pytest_cache
+__pycache__
+venv-testing
+reports
