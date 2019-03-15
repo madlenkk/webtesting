@@ -13,11 +13,11 @@ def find_map(selenium, variables):
 
     WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'mat-nav-list')))
 
-    ## Simple method - works correctly with only 1 result in the list
+    # # Simple method - works correctly with only 1 result in the list
     # result = selenium.find_element(By.CLASS_NAME, 'custom-list-item')
     # result.click()
 
-    ## Complex and correct method
+    # # Complex and correct method
     results = selenium.find_elements(By.CLASS_NAME, 'custom-list-item')
     item_title = results[0].find_element(By.CLASS_NAME, 'custom-list-item-title').text
     assert variables['map_name'] == item_title
