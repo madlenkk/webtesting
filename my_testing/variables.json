@@ -4,7 +4,7 @@
   "username_invalid": "username_invalid@invalid.com",
   "password_invalid": "password_invalid",
   "map_name": "PyWorking",
-  "place_coordinates": "44.00,20.00",
-  "place_name": "Magdalena Test",
+  "place_coordinates": "xx.xx,yy.yy",
+  "place_name": "xxx",
   "place_category": "Testing"
 }

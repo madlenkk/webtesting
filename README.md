@@ -49,13 +49,14 @@ Stáhněte webový ovladač [Google Chrome Driver](https://sites.google.com/a/ch
 
 Přidejte `chromedriver` do proměnné `PATH` (aby mohl být spouštěn pythonem).
 
+
 ### Windows
 
 Uložte soubor `chromedriver.exe` kamkoliv (např. do `C:\webdrivers\`) a přidejte cestu k souboru do Environment variables (Path):
 
-  * Otevřete `System Properties`, zvolte záložku `Advanced` a klikněte na `Environment variables`
-  * v poli `System variables` vyberte `Path` a klikněte na `Edit`
-  * klikněte na `New`, vložte cestu např. `C:\webdrivers\` a klikněte na `OK`
+  * Otevřete `System Properties/Vlastnosti systému`, zvolte záložku `Advanced/Upřesnit` a klikněte na `Environment variables/Proměnné prostředí`
+  * v poli `System variables/Systémové proměnné` vyberte `Path` a klikněte na `Edit/Upravit`
+  * klikněte na `New/Nový`, vložte cestu např. `C:\webdrivers\` a potvrďte `OK`
 
 Zkuste spustit ovladač v cmd:
 ```
@@ -66,6 +67,7 @@ Odpověď by měla být:
 Starting ChromeDriver ...
 Only local connections are allowed.
 ```
+
 
 ### Linux
 
@@ -92,6 +94,7 @@ Odpověď by měla být:
 Starting ChromeDriver ...
 Only local connections are allowed.
 ```
+
 
 ### macOS
 
@@ -127,6 +130,7 @@ Starting ChromeDriver ...
 Only local connections are allowed.
 ```
 
+
 ## Instalace - pokračování
 
 ### Naklonování repozitáře
@@ -136,6 +140,7 @@ Naklonujte si repozitář `webtesting` do vašeho počítače a vstupte do adres
 git clone https://github.com/madlenkk/webtesting.git
 cd webtesting
 ```
+
 
 ### Instalace virtualního prostředí
 
@@ -164,7 +169,6 @@ na Windows:
 ```
 venv-testing\Scripts\activate
 ```
-
 
 **NOTE:** Virtualenv může být deaktivován pomocí příkazu `deactivate`.
 
@@ -242,7 +246,7 @@ test.py .                                                                       
 
 Default options are defined in `pytest.ini`.
 
-* `test.py` -
+* `test.py`
 * `--base-url` - set url of tested application (default is defined in `pytest.ini`)
 * `--html` - set filename of output log (default is defined in `pytest.ini`)
 * `--driver` - set browser used for testing (default is defined in `pytest.ini`)
@@ -251,7 +255,6 @@ Default options are defined in `pytest.ini`.
 * `--stop` - use if you don't want browser to be closed in case of test failure
 * `-k` - specify tests to be run
 * `-m` - specify a Test Suite to be run (available markers are defined in `pytest.ini`)
-
 
 **NOTE:** Pytest v daném adresáři vyhledá a spustí sám od sebe vše, co začíná slovem test, pokud mu pomocí options `-k` nebo -`m` nespecifikujeme, co pustit chceme.
 

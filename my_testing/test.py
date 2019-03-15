@@ -8,7 +8,7 @@ import pytest
 from tests.setup import load_app, cookie_close
 from tests.login import login_valid, login_invalid, logout, login_cancel
 from tests.find_map import find_map
-from tests.add_place import add_place
+
 
 @pytest.mark.complex
 def test_setup(selenium, base_url):
@@ -39,13 +39,3 @@ def test_find_map(selenium, base_url, variables):
     load_app(selenium, base_url)
     login_valid(selenium, variables)
     find_map(selenium, variables)
-
-@pytest.mark.complex
-def test_add_place(selenium, base_url, variables):
-    """Test Suite: 4. Add place
-    """
-
-    load_app(selenium, base_url)
-    login_valid(selenium, variables)
-    find_map(selenium, variables)
-    add_place(selenium, variables)

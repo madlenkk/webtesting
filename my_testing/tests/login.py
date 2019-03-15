@@ -65,7 +65,7 @@ def logout(selenium):
 
     time.sleep(1)
 
-    assert "/dashboard" in selenium.current_url
+    assert "/discover" in selenium.current_url
     assert "/my/stream" not in selenium.current_url
 
 

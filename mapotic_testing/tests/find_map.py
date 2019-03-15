@@ -8,20 +8,20 @@ def find_map(selenium, variables):
     """Find testing map
     """
 
-    discover_btn = selenium.find_element(By.CLASS_NAME, 'mapotic-normal-button')
-    discover_btn.click()
-
-    WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'browser-container')))
-
-    input_search = selenium.find_element(By.CLASS_NAME, 'search-input')
+    input_search = selenium.find_element(By.CLASS_NAME, 'input-normal')
     input_search.send_keys(variables['map_name'])
 
-    WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'results-item')))
+    WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'mat-nav-list')))
 
-    result = selenium.find_elements(By.CLASS_NAME, 'results-item')
-    item_title = result[0].find_element(By.CLASS_NAME, 'results-item-content').get_attribute('title')
+    ## Simple method - works correctly with only 1 result in the list
+    # result = selenium.find_element(By.CLASS_NAME, 'custom-list-item')
+    # result.click()
+
+    ## Complex and correct method
+    results = selenium.find_elements(By.CLASS_NAME, 'custom-list-item')
+    item_title = results[0].find_element(By.CLASS_NAME, 'custom-list-item-title').text
     assert variables['map_name'] == item_title
-    result[0].click()
+    results[0].click()
 
     sidebar = WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'map-sidebar-content')))
     assert sidebar

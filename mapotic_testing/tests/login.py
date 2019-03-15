@@ -38,7 +38,7 @@ def login_valid(selenium, variables):
     btn_login_submit = signup_form.find_element(By.CSS_SELECTOR, 'button[type=submit]')
     btn_login_submit.click()
 
-    WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'my-mapotic-wrap')))
+    WebDriverWait(selenium, 5).until(EC.invisibility_of_element_located((By.CLASS_NAME, 'signup-form')))
 
     assert "/my/stream" in selenium.current_url
 
@@ -65,7 +65,7 @@ def logout(selenium):
 
     time.sleep(1)
 
-    assert "/dashboard" in selenium.current_url
+    assert "/discover" in selenium.current_url
     assert "/my/stream" not in selenium.current_url
 
 

@@ -12,7 +12,7 @@ def show_dropdown(selenium):
 
     time.sleep(1)
 
-    # WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'profile-thumb')))
+    WebDriverWait(selenium, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'profile-thumb')))
 
     dropdown = selenium.find_element(By.CLASS_NAME, 'profile-thumb')
     dropdown.click()
