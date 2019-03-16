@@ -28,9 +28,9 @@ Co mít připraveno:
 * **nainstalovaný [git](https://git-scm.com/)**: viz postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/git/install)
 * **nainstalovaný webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html).**
   (Případně **Chromium**, máš-li už nainstalovaný ten.)
-* **stažený webový ovladač [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)**:
-  Stáhněte si archiv s ovladačem *podle své verze prohlížeče Chrome* (viz menu prohlížeče `⋮`, *Nápověda*/*Help*, *O prohlížeči Google Chrome*/*About Google Chrome*).
-  Později archiv rozbalíme na správné místo.
+* **stažený webový ovladač** Google Chrome Driver:
+  * Zjistěte svou verzi prohlížeče (viz menu prohlížeče `⋮`, *Nápověda*/*Help*, *O prohlížeči Google Chrome*/*About Google Chrome*).
+  * Stáhněte si [archiv s ovladačem](https://sites.google.com/a/chromium.org/chromedriver/downloads) podle své verze prohlížeče. Později archiv rozbalíme na správné místo.
 
 
 ## Použité technologie
