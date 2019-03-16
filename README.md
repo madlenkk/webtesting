@@ -47,7 +47,7 @@ Co mít připraveno:
 
 Stáhněte webový ovladač [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) a rozbalte zip.
 
-Přidejte `chromedriver` do proměnné `PATH` (aby mohl být spouštěn pythonem).
+Pak je potřeba přidat `chromedriver` do systémové proměnné `PATH`, aby mohl být spouštěn pythonem. Postup se liší podle operačního systému:
 
 
 ### Windows
