@@ -22,14 +22,15 @@ Materiály:
 * [Tabulka: Test cases](https://docs.google.com/spreadsheets/d/1uaAEmRhaNE7bwm2cp1tixQ_jNn-wTA5CChBtGvipb8E/edit?usp=sharing)
 
 Co mít připraveno:
-* účet na [github](https://github.com/)
-* editor [např. Atom](https://atom.io/) - postup instalace na [Nauč se Python!](https://naucse.python.cz/course/pyladies/beginners/install-editor/)
-* nainstalovaný [Python 3](http://python.org) - postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/beginners/install/)
-* nainstalovaný [git](https://git-scm.com/) - postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/git/install)
-* nainstalovaný webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
-* nainstalovaný webový ovladač [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
-
-  **NOTE:** Webový ovladač musí být přidán do proměnné `PATH` - postup viz [Instalace webdriveru](https://github.com/madlenkk/webtesting#instalace-webdriveru)
+* **účet na [github.com](https://github.com/)**
+* **editor** [např. Atom](https://atom.io/): viz postup instalace na [Nauč se Python!](https://naucse.python.cz/course/pyladies/beginners/install-editor/)
+* **nainstalovaný [Python](http://python.org)** 3.6 nebo vyšší: viz postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/beginners/install/)
+* **nainstalovaný [git](https://git-scm.com/)**: viz postup instalace na [Nauč se Python!](http://naucse.python.cz/lessons/git/install)
+* **nainstalovaný webový prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html).**
+  (Případně **Chromium**, máš-li už nainstalovaný ten.)
+* **stažený webový ovladač [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)**:
+  Stáhněte si archiv s ovladačem *podle své verze prohlížeče Chrome* (viz menu prohlížeče `⋮`, *Nápověda*/*Help*, *O prohlížeči Google Chrome*/*About Google Chrome*).
+  Později archiv rozbalíme na správné místo.
 
 
 ## Použité technologie
@@ -43,150 +44,114 @@ Co mít připraveno:
 * [chrome webdriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 
-## Instalace webdriveru
+## Příprava prostředí
 
-Stáhněte webový ovladač [Google Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) a rozbalte zip.
-
-Přidejte `chromedriver` do proměnné `PATH` (aby mohl být spouštěn pythonem).
-
-
-### Windows
-
-Uložte soubor `chromedriver.exe` kamkoliv (např. do `C:\webdrivers\`) a přidejte cestu k souboru do Environment variables (Path):
-
-  * Otevřete `System Properties/Vlastnosti systému`, zvolte záložku `Advanced/Upřesnit` a klikněte na `Environment variables/Proměnné prostředí`
-  * v poli `System variables/Systémové proměnné` vyberte `Path` a klikněte na `Edit/Upravit`
-  * klikněte na `New/Nový`, vložte cestu např. `C:\webdrivers\` a potvrďte `OK`
-
-Zkuste spustit ovladač v cmd:
-```
-chromedriver
-```
-Odpověď by měla být:
-```
-Starting ChromeDriver ...
-Only local connections are allowed.
-```
-
-
-### Linux
-
-Uložte soubor `chromedriver` kamkoliv na disk.
-
-Vytvořte alias pro `chromedriver` v `/usr/bin/`:
-```
-sudo ln -s /path/to/chromedriver /usr/bin
-```
-Zkontrolujte cestu k ovladači:
-```
-which chromedriver
-```
-Odpověď by měla být:
-```
-/usr/bin/chromedriver
-```
-Zkuste spustit ovladač:
-```
-chromedriver
-```
-Odpověď by měla být:
-```
-Starting ChromeDriver ...
-Only local connections are allowed.
-```
-
-
-### macOS
-
-Přesuňte `chromedriver` z `Downloads` do `/usr/local/bin/`
-```
-sudo mv /Downloads/chromedriver /usr/local/bin/chromedriver
-```
-Zkontrolujte cestu k ovladači:
-```
-which chromedriver
-```
-Odpověď by měla být:
-```
-/usr/local/bin/chromedriver
-```
-Otevřete v textovém editoru soubor `paths` - např.:
-```
-atom /etc/paths
-```
-Přidejte cestu k ovladači na poslední řádek souboru a uložte:
-```
-/usr/local/bin/chromedriver
-```
-**NOTE:** Smažte ostatní cesty k ovladači - pokud jsou v souboru uvedeny.
-
-Zkuste spustit ovladač:
-```
-chromedriver
-```
-Odpověď by měla být:
-```
-Starting ChromeDriver ...
-Only local connections are allowed.
-```
-
-
-## Instalace - pokračování
+Vytvořte si na dnešní workshop adresář.
+V příkazové řádce se do něj přepněte (pomocí příkazu `cd`).
 
 ### Naklonování repozitáře
 
 Naklonujte si repozitář `webtesting` do vašeho počítače a vstupte do adresáře:
 ```
-git clone https://github.com/madlenkk/webtesting.git
-cd webtesting
+$ git clone https://github.com/madlenkk/webtesting.git
+$ cd webtesting
 ```
 
+> [note]
+> Znak `$` do příkazové řádky nepište – tím jen ukazujeme, že jde o příkazovou řádku.
+> (Výzva příkazové řádky končí právě znakem `$`, nebo `>` na Windows.)
+> Zadejte tedy jen `git clone https://github.com/madlenkk/webtesting.git` a  `cd webtesting`.
 
-### Instalace virtualního prostředí
+### Vytvoření a aktivace virtuálního prostředí
 
-Upgradujte pip:
+Následujícími příkazy si vytvořte a aktivujte virtuální prostředí pro tento workshop.
+
 na Linux/macOS:
 ```
-pip install -U pip
+$ python3 -m venv venv-testing
+$ source venv-testing/bin/activate
 ```
+
 na Windows:
 ```
-python -m pip install -U pip
+> py -3 -m venv venv-testing
+> venv-testing\Scripts\activate
 ```
 
-Nainstalujte `virtualenv`, vytvořte virtuální prostředí `venv-testing` pro tento projekt:
+První příkaz (ten s `-m venv`) vytvoří virtuální prostředí. Ten je potřeba zadat jen jednou.
+
+Druhý příkaz (ten s `activate`) prostředí aktivuje; ten je potřeba zadat vždy, když otevřete novou příkazovou řádku a budete v ní chtít začínat testovat. (Je potřeba ho zavolat z aktivního adresáře `webtesting`.)
+
+Aktivované virtuální prostředí poznáš tak, že na začátku příkazové řádky svítí jeho jméno v závorkách: `(venv-testing)`.
+
+**NOTE:** Prostředí může být deaktivováno pomocí příkazu `deactivate` (nebo zavřením příkazové řádky).
+
+
+### Instalace balíčků pro Python
+
+Ve virtuálním prostředí několik věcí nastavit.
+Stačí to udělat jednou (dokud virtuální prostředí nesmažete).
+
+První je aktualizace nástroje `pip`:
+
 ```
-pip install virtualenv
-virtualenv -p python venv-testing
+(venv-testing)$ python -m pip install --upgrade pip
 ```
 
-Aktivujte vytvořené virtuální prostředí:
+> [note]
+> Ono `(venv-testing)$` opět do příkazové řádky nepište – tím jen ukazujeme, že má být aktivované virtuální prostředí.
+> Zadejte tedy jen `python -m pip install --upgrade pip`.
+
+Druhý je instalace potřebných knihoven pro Python (jejich seznam je v souboru `requirements.txt`):
+
+```
+(venv-testing)$ python -m pip install -r requirements.txt
+```
+
+### Instalace webového ovladače
+
+Další krok je nastavení webového ovladače.
+
+Archiv s ovladačem, který jste si stáhli výše, si rozbalte do adresáře (`webtesting`).
+Přímo v adresáři `webtesting` by tedy teď měl být soubor `chromedriver` (nebo `chromedriver.exe`).
+
+Ten následujícím příkazem zkopírujte na správné místo:
+
 na Linux/macOS:
 ```
-source venv-testing/bin/activate
+(venv-testing)$ cp chromedriver venv-testing/bin/
 ```
+
 na Windows:
 ```
-venv-testing\Scripts\activate
+(venv-testing)$ copy chromedriver.exe venv-testing\Scripts\
 ```
 
-**NOTE:** Virtualenv může být deaktivován pomocí příkazu `deactivate`.
-
-
-### Instalace balíčků
-
-S aktivovaným `virtualenv` nainstalujte požadované balíčky ze souboru `requirements.txt` pomocí příkazu `pip` :
+Pro kontrolu zkuste ovladač spustit:
 ```
-pip install -r requirements.txt
+(venv-testing)$ chromedriver
+```
+Odpověď by měla být:
+```
+Starting ChromeDriver ...
+Only local connections are allowed.
 ```
 
-Ověřte, že byla instalace úspěšná, např. pomocí:
+Ovladač ukončete pomocí <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+
+
+### Vyzkoušení
+
+Tím je příprava hotová.
+Ověřte ještě, že všechno funguje: přejděte do adresáře `my_testing` a spusťte příkaz `pytest`:
+
 ```
-pytest
+(venv-testing)$ cd my_testing
+(venv-testing)$ pytest
 ```
 
 Odpověď by měla být zhruba následující:
-```
+```pytest
 ======================================== test session starts ========================================
 platform linux -- Python 3.6.5, pytest-4.0.1, py-1.7.0, pluggy-0.8.0
 sensitiveurl: .*
@@ -198,16 +163,13 @@ collected 0 items
 ```
 
 
-## Struktura
+## Struktura projektu
 
 V adresáři `webtesting` se nacházejí dva podadresáře:
 * `mapotic_testing` - adresář, který obsahuje kompletní funkční testy aplikace Mapotic (vaše nápověda)
 * `my_testing` - váš adresář na hraní
 
-Vstupte do adresáře `my_testing`:
-```
-cd my_testing
-```
+V adresáři `my_testing` pak je:
 
 * `test.py` - file with main functions to run the tests - calls another test scripts from directory `tests`
 * `conftest.py` - global setting of all tests
